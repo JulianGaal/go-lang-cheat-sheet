@@ -647,25 +647,26 @@ hellomsg := `
 package main
 
 import (
-    "fmt"
+    "log"
     "net/http"
+
+    "github.com/gorilla/mux"
 )
 
-// define a type for the response
-type Hello struct{}
-
-// let that type implement the ServeHTTP method (defined in interface http.Handler)
-func (h Hello) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-    fmt.Fprint(w, "Hello!")
-}
-
 func main() {
-    var h Hello
-    http.ListenAndServe("localhost:4000", h)
+    serveWeb()
+
 }
 
-// Here's the method signature of http.ServeHTTP:
-// type Handler interface {
-//     ServeHTTP(w http.ResponseWriter, r *http.Request)
-// }
+func serveWeb() {
+    r := mux.NewRouter()
+
+    //Serves static files in directory public
+    r.PathPrefix("/").Handler(http.StripPrefix("/", http.FileServer(http.Dir("public/"))))
+
+    log.Printf("Listening at :8080 . . . \n I am serving to Web \n")
+    http.Handle("/", r)
+    http.ListenAndServe(":8080", nil)
+
+}
 ```
