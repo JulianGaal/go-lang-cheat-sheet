@@ -34,7 +34,6 @@
   * [Channel Axioms](#channel-axioms)
 17. [Printing](#printing)
 18. [Snippets](#snippets)
-  * [Http-Server](#http-server)
 
 ## Credits
 
