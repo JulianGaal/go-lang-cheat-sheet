@@ -648,6 +648,6 @@ Helpful go(lang) snippets cheat sheet
 
 Feel free to add/commit/suggest changes. This is a constantly changing cheat sheet.
 
-**[HTTP Server](https://github.com/JulianGaal/go-lang-cheat-sheet/blob/master/snippets/webserver.go) </br>
+**[HTTP Server](https://github.com/JulianGaal/go-lang-cheat-sheet/blob/master/snippets/webserver.go)** </br>
 **[Basic Database connection](https://github.com/JulianGaal/go-lang-cheat-sheet/blob/master/snippets/database.go)** (PostgreSQL and [Gorm](https://github.com/jinzhu/gorm) ) </br>
 **[Log Template](https://github.com/JulianGaal/go-lang-cheat-sheet/blob/master/snippets/log.go)**
