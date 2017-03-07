@@ -640,12 +640,10 @@ hellomsg := `
 ` // multi-line string literal, using back-tick at beginning and end
 ```
 
-Snippets
+# Snippets
 Helpful go(lang) snippets cheat sheet
 
 Feel free to add/commit/suggest changes. This is a constantly changing cheat sheet.
-
-# Index
 
 **[HTTP Server](https://github.com/JulianGaal/go-snippets/blob/master/webserver.go)** using the awesome [Gorilla Mux](https://github.com/gorilla/mux) </br>
 **[Basic Database connection](https://github.com/JulianGaal/go-snippets/blob/master/database.go)** (PostgreSQL and [Gorm](https://github.com/jinzhu/gorm) ) </br>
