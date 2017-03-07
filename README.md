@@ -640,33 +640,13 @@ hellomsg := `
 ` // multi-line string literal, using back-tick at beginning and end
 ```
 
-# Snippets
+Snippets
+Helpful go(lang) snippets cheat sheet
 
-## HTTP Server
-```go
-package main
+Feel free to add/commit/suggest changes. This is a constantly changing cheat sheet.
 
-import (
-    "log"
-    "net/http"
+# Index
 
-    "github.com/gorilla/mux"
-)
-
-func main() {
-    serveWeb()
-
-}
-
-func serveWeb() {
-    r := mux.NewRouter()
-
-    //Serves static files in directory public
-    r.PathPrefix("/").Handler(http.StripPrefix("/", http.FileServer(http.Dir("public/"))))
-
-    log.Printf("Listening at :8080 . . . \n I am serving to Web \n")
-    http.Handle("/", r)
-    http.ListenAndServe(":8080", nil)
-
-}
-```
+**[HTTP Server](https://github.com/JulianGaal/go-snippets/blob/master/webserver.go)** using the awesome [Gorilla Mux](https://github.com/gorilla/mux) </br>
+**[Basic Database connection](https://github.com/JulianGaal/go-snippets/blob/master/database.go)** (PostgreSQL and [Gorm](https://github.com/jinzhu/gorm) ) </br>
+**[Log Template](https://github.com/JulianGaal/go-snippets/blob/master/log.go)**
