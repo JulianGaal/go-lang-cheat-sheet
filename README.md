@@ -1,6 +1,12 @@
 # Go Cheat Sheet
 Includes syntax specifics (see below) and includes a [growing collection of snippets]().
 
+# Code Snippets
+  * [Database Connection](https://github.com/JulianGaal/go-lang-cheat-sheet/blob/master/snippets/database.go)
+  * [Log Template](https://github.com/JulianGaal/go-lang-cheat-sheet/blob/master/snippets/log.go)
+  * [HTTP Server](https://github.com/JulianGaal/go-lang-cheat-sheet/blob/master/snippets/webserver.go)
+
+
 # Index
 1. [Basic Syntax](#basic-syntax)
 2. [Operators](#operators)
