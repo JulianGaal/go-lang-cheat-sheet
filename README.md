@@ -1,13 +1,16 @@
 # Go Cheat Sheet
-Includes syntax specifics (see below) and includes a [growing collection of snippets]().
 
-# Code Snippets
-  * [Database Connection](https://github.com/JulianGaal/go-lang-cheat-sheet/blob/master/snippets/database.go)
-  * [Log Template](https://github.com/JulianGaal/go-lang-cheat-sheet/blob/master/snippets/log.go)
-  * [HTTP Server](https://github.com/JulianGaal/go-lang-cheat-sheet/blob/master/snippets/webserver.go)
+# Snippets
+Helpful go(lang) snippets cheat sheet
 
+Feel free to add/commit/suggest changes. This is a constantly changing cheat sheet.
 
-# Index
+**[HTTP Server](https://github.com/JulianGaal/go-snippets/blob/master/webserver.go)** using the awesome [Gorilla Mux](https://github.com/gorilla/mux) </br>
+**[Basic Database connection](https://github.com/JulianGaal/go-snippets/blob/master/database.go)** (PostgreSQL and [Gorm](https://github.com/jinzhu/gorm) ) </br>
+**[Log Template](https://github.com/JulianGaal/go-snippets/blob/master/log.go)** </br>
+**[AWS Connection](https://github.com/juliangaal/go-snippets/blob/master/aws.go)**
+
+# Cheat Sheet: Index
 1. [Basic Syntax](#basic-syntax)
 2. [Operators](#operators)
   * [Arithmetic](#arithmetic)
@@ -40,10 +43,6 @@ Includes syntax specifics (see below) and includes a [growing collection of snip
   * [Channels](#channels)
   * [Channel Axioms](#channel-axioms)
 17. [Printing](#printing)
-18. [Snippets](#snippets)
-  * [Database Connection](https://github.com/JulianGaal/go-lang-cheat-sheet/blob/master/snippets/database.go)
-  * [Log Template](https://github.com/JulianGaal/go-lang-cheat-sheet/blob/master/snippets/log.go)
-  * [HTTP Server](https://github.com/JulianGaal/go-lang-cheat-sheet/blob/master/snippets/webserver.go)
 
 ## Credits
 
@@ -207,7 +206,7 @@ func outer() (func() int, int) {
 func main() {
 	fmt.Println(adder(1, 2, 3)) 	// 6
 	fmt.Println(adder(9, 9))	// 18
-	
+
 	nums := []int{10, 20, 30}
 	fmt.Println(adder(nums...))	// 60
 }
@@ -253,12 +252,12 @@ f := float64(i)
 u := uint(f)
 ```
 
-## Packages 
+## Packages
 * Package declaration at top of every source file
 * Executables are in package `main`
 * Convention: package name == last name of import path (import path `math/rand` => package `rand`)
 * Upper case identifier: exported (visible from other packages)
-* Lower case identifier: private (not visible from other packages) 
+* Lower case identifier: private (not visible from other packages)
 
 ## Control structures
 
@@ -271,14 +270,14 @@ func main() {
 	} else {
 		return -x
 	}
-    	
+
 	// You can put one statement before the condition
 	if a := b + c; a < 42 {
 		return a
 	} else {
 		return a - 42
 	}
-    
+
 	// Type assertion inside if
 	var val interface{}
 	val = "foo"
@@ -315,7 +314,7 @@ func main() {
         fmt.Println("Other")
     }
 
-    // as with for and if, you can have an assignment statement before the switch value 
+    // as with for and if, you can have an assignment statement before the switch value
     switch os := runtime.GOOS; os {
     case "darwin": ...
     }
@@ -419,7 +418,7 @@ var m = map[string]Vertex{
 
 There are no classes, only structs. Structs can have methods.
 ```go
-// A struct is a type. It's also a collection of fields 
+// A struct is a type. It's also a collection of fields
 
 // Declaration
 type Vertex struct {
@@ -428,7 +427,7 @@ type Vertex struct {
 
 // Creating
 var v = Vertex{1, 2}
-var v = Vertex{X: 1, Y: 2} // Creates a struct by defining values with keys 
+var v = Vertex{X: 1, Y: 2} // Creates a struct by defining values with keys
 var v = []Vertex{{1,2},{5,2},{5,5}} // Initialize a slice of structs
 
 // Accessing members
@@ -468,7 +467,7 @@ r := &Vertex{1, 2} // r is also a pointer to a Vertex
 
 // The type of a pointer to a Vertex is *Vertex
 
-var s *Vertex = new(Vertex) // new creates a pointer to a new struct instance 
+var s *Vertex = new(Vertex) // new creates a pointer to a new struct instance
 ```
 
 ## Interfaces
@@ -627,7 +626,7 @@ func doStuff(channelOut, channelIn chan int) {
   c <- 2
   close(c)
   for i := 0; i < 3; i++ {
-      fmt.Printf("%d ", <-c) 
+      fmt.Printf("%d ", <-c)
   }
   // 1 2 0
   ```
@@ -648,12 +647,3 @@ hellomsg := `
  "Hello" in Hindi is नमस्ते ('Namaste')
 ` // multi-line string literal, using back-tick at beginning and end
 ```
-
-# Snippets
-Helpful go(lang) snippets cheat sheet
-
-Feel free to add/commit/suggest changes. This is a constantly changing cheat sheet.
-
-**[HTTP Server](https://github.com/JulianGaal/go-lang-cheat-sheet/blob/master/snippets/webserver.go)** </br>
-**[Basic Database connection](https://github.com/JulianGaal/go-lang-cheat-sheet/blob/master/snippets/database.go)** (PostgreSQL and [Gorm](https://github.com/jinzhu/gorm) ) </br>
-**[Log Template](https://github.com/JulianGaal/go-lang-cheat-sheet/blob/master/snippets/log.go)**
