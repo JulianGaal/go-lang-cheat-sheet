@@ -2,8 +2,8 @@
 Feel free to add/commit/suggest changes. This is a constantly changing cheat sheet.
 
 # Snippets
-[Helpful go(lang) snippets for getting started]() thanks to [mkaz](https://github.com/mkaz/working-with-go)</br>
-Webserver, log template, database connection and more [here]()</br>
+[Helpful go(lang) snippets for getting started](https://github.com/juliangaal/go-lang-cheat-sheet/tree/master/snippets) thanks to [mkaz](https://github.com/mkaz/working-with-go)</br>
+Webserver, log template, database connection and more [here](https://github.com/juliangaal/go-lang-cheat-sheet/tree/master/snippets/specific%20snippets)</br>
 
 # Cheat Sheet: Index
 1. [Basic Syntax](#basic-syntax)
