@@ -5,10 +5,10 @@ Helpful go(lang) snippets cheat sheet
 
 Feel free to add/commit/suggest changes. This is a constantly changing cheat sheet.
 
-**[HTTP Server](https://github.com/JulianGaal/go-snippets/blob/master/webserver.go)** using the awesome [Gorilla Mux](https://github.com/gorilla/mux) </br>
-**[Basic Database connection](https://github.com/JulianGaal/go-snippets/blob/master/database.go)** (PostgreSQL and [Gorm](https://github.com/jinzhu/gorm) ) </br>
-**[Log Template](https://github.com/JulianGaal/go-snippets/blob/master/log.go)** </br>
-**[AWS Connection](https://github.com/juliangaal/go-snippets/blob/master/aws.go)**
+**[HTTP Server](https://github.com/juliangaal/go-lang-cheat-sheet/blob/master/snippets/webserver.go)** using the awesome [Gorilla Mux](https://github.com/gorilla/mux) </br>
+**[Basic Database connection](https://github.com/juliangaal/go-lang-cheat-sheet/blob/master/snippets/database.go)** (PostgreSQL and [Gorm](https://github.com/jinzhu/gorm) ) </br>
+**[Log Template](https://github.com/juliangaal/go-lang-cheat-sheet/blob/master/snippets/log.go)** </br>
+**[AWS Connection](https://github.com/juliangaal/go-lang-cheat-sheet/blob/master/snippets/aws.go)**
 
 # Cheat Sheet: Index
 1. [Basic Syntax](#basic-syntax)

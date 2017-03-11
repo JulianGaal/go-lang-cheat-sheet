@@ -46,7 +46,7 @@ func feedData() {
 
 	//If returned 'data' is not empty, entry already exists
 	if len(data) > 0 {
-		log.Printf("entry already exists. not added", recipe[0], recipe[1])
+		log.Printf("entry already exists. not added %v %v", recipe[0], recipe[1])
 	} else {
 		exampleDB.Create(&entry)
 	}
