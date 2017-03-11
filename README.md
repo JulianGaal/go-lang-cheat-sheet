@@ -1,4 +1,11 @@
 # Go Cheat Sheet
+Includes syntax specifics (see below) and includes a [growing collection of snippets]().
+
+# Code Snippets
+  * [Database Connection](https://github.com/JulianGaal/go-lang-cheat-sheet/blob/master/snippets/database.go)
+  * [Log Template](https://github.com/JulianGaal/go-lang-cheat-sheet/blob/master/snippets/log.go)
+  * [HTTP Server](https://github.com/JulianGaal/go-lang-cheat-sheet/blob/master/snippets/webserver.go)
+
 
 # Index
 1. [Basic Syntax](#basic-syntax)
@@ -34,6 +41,9 @@
   * [Channel Axioms](#channel-axioms)
 17. [Printing](#printing)
 18. [Snippets](#snippets)
+  * [Database Connection](https://github.com/JulianGaal/go-lang-cheat-sheet/blob/master/snippets/database.go)
+  * [Log Template](https://github.com/JulianGaal/go-lang-cheat-sheet/blob/master/snippets/log.go)
+  * [HTTP Server](https://github.com/JulianGaal/go-lang-cheat-sheet/blob/master/snippets/webserver.go)
 
 ## Credits
 
@@ -644,6 +654,6 @@ Helpful go(lang) snippets cheat sheet
 
 Feel free to add/commit/suggest changes. This is a constantly changing cheat sheet.
 
-**[HTTP Server](https://github.com/JulianGaal/go-snippets/blob/master/webserver.go)** using the awesome [Gorilla Mux](https://github.com/gorilla/mux) </br>
-**[Basic Database connection](https://github.com/JulianGaal/go-snippets/blob/master/database.go)** (PostgreSQL and [Gorm](https://github.com/jinzhu/gorm) ) </br>
-**[Log Template](https://github.com/JulianGaal/go-snippets/blob/master/log.go)**
+**[HTTP Server](https://github.com/JulianGaal/go-lang-cheat-sheet/blob/master/snippets/webserver.go)** </br>
+**[Basic Database connection](https://github.com/JulianGaal/go-lang-cheat-sheet/blob/master/snippets/database.go)** (PostgreSQL and [Gorm](https://github.com/jinzhu/gorm) ) </br>
+**[Log Template](https://github.com/JulianGaal/go-lang-cheat-sheet/blob/master/snippets/log.go)**
